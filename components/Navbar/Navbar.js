@@ -15,7 +15,7 @@ const Navbar = () => {
       
       <div className={localstyles.header_action}>
         <>
-          <Link href="#provided_Services" replace={true}>
+          <Link href="#provided_Services">
             <a className={localstyles.header_link} onClick={services}>
               services
             </a>

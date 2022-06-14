@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
-import Router from 'next/router'
-import Link from 'next/link'
+import {useRouter} from 'next/router'
 const Login = () => {
   // constructor() {
   //   super();
@@ -12,6 +11,7 @@ const Login = () => {
   //     password: "",
   //   };
   // }
+  const router = useRouter();
   const [values, setValues] = useState({
     loading: false,
     username: " ",
@@ -147,8 +147,8 @@ const Login = () => {
         <div className="bg-gray-100 text-gray-800 antialiased px-4 !py-20 flex flex-col justify-center sm:py-12">
           <div className="w-full relative py-3 sm:max-w-xl mx-auto text-center">
             <span className="text-2xl font-light">Login to your account</span>
-            <div className="relative mt-4 pb-6 bg-white shadow-md sm:rounded-lg text-center">
-              <div className="h-2 bg-indigo-400 rounded-t-md"></div>
+            <div className="relative mt-4 pb-6 bg-white shadow-md sm:rounded-lg text-left">
+              <div className="h-2 bg-green-800 rounded-t-md"></div>
               <div className="py-6 px-8">
                 <label className="block font-semibold">Username or Email</label>
                 <input
@@ -167,7 +167,7 @@ const Login = () => {
                   onChange={handleAddFormChange}
                 ></input>
                 <div className="flex justify-between items-baseline">
-                  <button className="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-lg" onClick={login}>
+                  <button className="mt-4 bg-green-900 text-white py-2 px-6 rounded-lg" onClick={login}>
                     Login
                   </button>
                   <a href="#" className="text-sm hover:underline">
@@ -175,11 +175,11 @@ const Login = () => {
                   </a>
                 </div>
               </div>
-              <button className="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-lg" onClick={<Link href='/register'/>}>
-                    Register
-                  </button>
+              
             </div>
-            
+            <button className="mt-4 text-xl text-black hover:underline" onClick={()=>router.push('/register')}>
+                    Don't have an account, Register Now!!
+                  </button>
           </div>
           
         </div>

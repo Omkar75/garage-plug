@@ -9,8 +9,8 @@ export default function Home() {
       <Navbar />
       <PageWallpaper />
       <FromCompnent />
-      {/* <Footer /> */}
       <PageWallpaper />
+      <Footer />
     </React.Fragment>
   )
 }

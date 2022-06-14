@@ -130,7 +130,7 @@ const Register = () => {
           <div className="w-full relative py-3 sm:max-w-xl mx-auto text-center">
             <span className="text-2xl font-light">Register as a User</span>
             <div className="relative mt-4 pb-6 bg-white shadow-md sm:rounded-lg text-left">
-              <div className="h-2 bg-indigo-400 rounded-t-md"></div>
+              <div className="h-2 bg-green-800 rounded-t-md"></div>
               <div className="py-6 px-8">
                 <label className="block font-semibold">Username or Email</label>
                 <input
@@ -157,7 +157,7 @@ const Register = () => {
                   onChange={handleAddFormChange}
                 ></input>
                 <div className="flex justify-between items-baseline">
-                  <button className="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-lg" onClick={register}>
+                  <button className="mt-4 bg-green-900 text-white py-2 px-6 rounded-lg" onClick={register}>
                     Register
                   </button>
                 </div>
