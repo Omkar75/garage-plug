@@ -2,10 +2,6 @@ import React from "react";
 import localstyles from "./Navbar.module.css";
 import Link from "next/link";
 const Navbar = () => {
-  const login = () => {};
-  const register = () => {
-    console.log("register");
-  };
   const services = () => {
     console.log("services");
   };
