@@ -24,7 +24,7 @@ function Footer() {
           </form>
         </div>
       </section>
-      <div class={localstyles.footer_links}>
+      <div classNameName={localstyles.footer_links}>
         <div className={localstyles.footer_link_wrapper}>
           <div className={localstyles.footer_link_items}>
             <h2>About Us</h2>

@@ -7,9 +7,9 @@
     z-index: 2;
     width: 100%;
     padding: 0.75em 2em;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    background: #ffffff;
-    height: 70px;
+    box-shadow: 0px 0px 5px 0px rgba(6, 174, 45, 0.2);
+    background: #3cc75f;
+    height: 60px;
   }
   
   .profile_image {
@@ -20,6 +20,7 @@
   .header_title {
     font-size: 1.5em;
     cursor: pointer;
+    color: #1890ff;
   }
   
   .header_action {
@@ -36,3 +37,5 @@
     color: #1890ff;
   }
   
+
+ 
